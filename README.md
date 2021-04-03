@@ -46,6 +46,24 @@ Run Jaeger container locally to collect tracing data from Flask application
 docker run -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
 ```
 
-## Features
+## Demo
 
-*ToDo
+Make sure you have Flask application running and jaeger running.
+
+- Make GET requests to below APIs
+
+    ```
+    localhost:5000
+    localhost:5000/zero
+    localhost:5000/zero-unhandled
+    localhost:5000/zero-trace
+    ```
+
+- Go to jaeger home page and select service `my-helloworld-service` to find trace
+
+    ```
+    http://localhost:16686/search
+    ```
+
+- Notice the number of spans for each request. We can add more spans to each
+REST API for better detailed traces.
