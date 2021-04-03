@@ -1,0 +1,7 @@
+# Utilities
+requests==2.25.1
+python-dotenv==0.17.0
+
+# flask
+Flask==1.1.2
+Flask-RESTful==0.3.8
