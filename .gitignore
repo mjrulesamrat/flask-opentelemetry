@@ -8,3 +8,6 @@ venv/
 
 # production environment config
 .env
+
+# vscode
+.vscode/
