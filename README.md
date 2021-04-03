@@ -40,7 +40,11 @@ Create Python Virtual environment and run projec locally.
 
 ## Jaeger setup guidelines
 
-*ToDo
+Run Jaeger container locally to collect tracing data from Flask application
+
+```bash
+docker run -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
+```
 
 ## Features
 
